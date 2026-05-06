@@ -54,6 +54,7 @@ class Model:
             peso = data.get('weight')
             risultato.append((u, v, peso))
 
+        risultato.sort(key=lambda x: x[1])
         risultato.sort(key=lambda x: x[0])
         # risultato.sort(key=lambda x: x[2], reverse=True)
         print(f"Gli archi sono: {len(risultato)}\n")
